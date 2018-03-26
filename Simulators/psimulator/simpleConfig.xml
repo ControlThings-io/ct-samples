@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XSimulatorConfig>
+    <XSimulatorOptions>
+        <maxLogTableSize>5000</maxLogTableSize>
+        <logToTable>true</logToTable>
+        <logToFile>true</logToFile>
+        <logFile>.\simulator.log</logFile>
+    </XSimulatorOptions>
+    <XChannel>
+        <XTCPServerChannel id="tcpServer" level="Info" ip="0.0.0.0" port="20000" retry="5000"/>
+        <XStack>
+            <XOutstationStack>
+                <id>Example GUI Outstation</id>
+                <level>Info</level>
+                <plugin>Example GUI Outstation</plugin>
+                <XLinkLayer useConfirms="false" isMaster="false" confirmedDataRetry="0" localAddress="1024" remoteAddress="1" rspTimeout="1000"/>
+                <XAppLayer maxRcvFragSize="2048" retryCount="0" rspTimeout="5000"/>
+                <XOutstation disableUnsol="false" unsolTimer="200" staticBinary="Group1Var2" staticAnalog="Group30Var1" staticCounter="Group20Var1" staticAnalogOutputStatus="Group40Var1" eventBinary="Group2Var2" eventAnalog="Group32Var1" eventCounter="Group22Var1"/>
+            </XOutstationStack>
+        </XStack>
+    </XChannel>
+    <XChannel>
+        <XTCPClientChannel id="tcpClient" level="Info" ip="127.0.0.1" port="20000" retry="5000"/>
+        <XStack>
+            <XMasterStack>
+                <id>Example GUI Master</id>
+                <level>Info</level>
+                <plugin>Example GUI Master</plugin>
+                <XLinkLayer useConfirms="false" isMaster="true" confirmedDataRetry="0" localAddress="1" remoteAddress="1024" rspTimeout="1000"/>
+                <XAppLayer maxRcvFragSize="2048" retryCount="0" rspTimeout="5000"/>
+                <XMaster allowTimeSync="true" doUnsolEnableDisable="true" enableUnsol="true" unsolClassMask="14" integrityPeriod="5000" taskRetryPeriod="5000"/>
+            </XMasterStack>
+        </XStack>
+    </XChannel>
+</XSimulatorConfig>

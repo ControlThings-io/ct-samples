@@ -1,0 +1,208 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red3\green47\blue153;\red83\green83\blue83;\red240\green242\blue245;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid2\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid501\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid6}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}}
+\margl1440\margr1440\vieww12600\viewh7800\viewkind0
+\deftab720
+\pard\pardeftab720\sl380\sa227
+
+\f0\b\fs34 \cf0 \expnd0\expndtw0\kerning0
+ANSI C12.22 (c1222)\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf0 \expnd0\expndtw0\kerning0
+ANSI C12.22 (also known as IEEE Std 1703) is an application layer protocol designed for use on electric utility meter networks of the Smart Grid. Its official title is 
+\i \expnd0\expndtw0\kerning0
+Protocol Specification for Interfacing to Data Communication Networks
+\i0 \expnd0\expndtw0\kerning0
+ but this title is somewhat more generic than the protocol. The protocol is used to transport ANSI C12.19 tables which are metering specific data structures. The ANSI C12.22/IEEE 1703 protocol define the framework for transporting ANSI C12.22/IEEE 1703 Advanced Metering Infrastructure (AMI) Application Layer Messages on an IP network on the Smart Grid.\
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf0 \expnd0\expndtw0\kerning0
+History\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf0 \expnd0\expndtw0\kerning0
+The first two protocols in this series were ANSI C12.18 and ANSI C12.19 which are, respectively, an infrared close range point-to-point telephone communications protocol and standardized data structures for electric utility meters (watthour meters). Virtually all electronic utility watthour meters produced for the North American market implement these standards. ANSI C12.18 was first published in 1996 and revised in 2006. ANSI C12.19/IEEE 1377 was originally published in 1997. The latest version of ANSI C12.19 is IEEE Std 1377-2012/ANSI C12.19-2012.\
+ANSI C12.21 was an adaptation of the simple ANSI C12.18 optical protocol and was intended for use over dial-up modems. It was first published in 1999 and revised in 2006.\
+ANSI C12.22 was first published in 2008, and it has been revised as IEEE Std 1703-2012/ANSI C12.22-2012. ANSI C12.22 retains the same read table/write table application layer services and encoding as C12.18 and C12.21, but uses an ASN.1 wrapper and adds encryption capabilities.\
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf0 \expnd0\expndtw0\kerning0
+Protocol dependencies\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0
+\b0\fs28 \cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+ANSI C12.22 / IEEE Std 1703: Define the message formats and communication protocols at the application layer used over any network segment.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa70
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "http://tools.ietf.org/html/rfc6142"}}{\fldrslt \expnd0\expndtw0\kerning0
+IETF RFC 6142}}\cf0 \expnd0\expndtw0\kerning0
+: Defines the requirements for implementing ANSI C12.22 / IEEE Std 1703 over the Internet, using IPv4 and/or IPv6. The protocol uses TCP, UDP and IGMP to communicate C12.22 Messages, where UDP and IGMP are use in multicast messaging. TCP and UDP may also be used in unicast messages.\uc0\u8232 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa70
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+IGMP with UDP multicast: In support of a multicast message delivery service from the network. This is necessary in cases where C12.22 IP Nodes need to perform Native IP Address discovery (e.g., the discovery of the Native IP Address of C12.22 IP Relays that provide a route out of the C12.22 IP Network Segment, or the discovery of the Native IP Address of a C12.22 IP Master Relay on the C12.22 IP Network). In this case the C12.22 IP Nodes use IP multicast to send a C12.22 Message that contains an EPSEM Resolve Service request on the LAN. IP multicast is also desirable, for example, when a C12.22 Host needs to read a multitude of C12.22 Nodes (e.g., meters) that are configured with a common C12.22 multicast group {\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/ApTitle"}}{\fldrslt \cf3 \expnd0\expndtw0\kerning0
+ApTitle}}. All C12.22 IP Relays and Master Relays are expected to implement IP multicast and UDP. It is also recommnded that non C12.22 Relay Nodes also implement IP multicast and UDP. The following multicast addresses have been registered by IANA for use by the ANSI C12.22 / IEEE Std 1703 standard:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+IPv4 -- "All C1222 Nodes" address 224.0.2.4\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+IPv6 -- "All C1222 Nodes" address FF0X::204\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+on port 1153.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa70
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+UDP: ANSI C12.22 can use {\field{\*\fldinst{HYPERLINK "http://wiki.wireshark.org/UDP"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+UDP}} as a transport protocol, this is the preferred mode of communication for connectionless-mode operations as described in {\field{\*\fldinst{HYPERLINK "http://tools.ietf.org/html/rfc6142#section-5.1"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+IETF RFC 6142}}. The well known UDP port for C12.22 traffic is 1153.\uc0\u8232 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+TCP: ANSI C12.22 can use {\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/TCP"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+TCP}} as a transport protocol, this is the preferred mode of communication for connection-mode operations as described in {\field{\*\fldinst{HYPERLINK "http://tools.ietf.org/html/rfc6142#section-5.1"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+IETF RFC 6142}}. The well known TCP port for C12.22 traffic is 1153.\uc0\u8232 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+ASN.1: The C12.22 Message wrapper defined by {\field{\*\fldinst{HYPERLINK "http://www.itu.int/rec/T-REC-X.237bis-199809-I/en"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+ISO/IEC 15955:1999 Information technology -- Open Systems Interconnection -- Connectionless protocol for the Application Service Object Association Control Service Element / ITU-T RECOMMENDATION X.237 bis}}, where the AP-title can be expressed both as OBJECT IDENTIFIER and RELATIVE-OID per detailed syntax of {\field{\*\fldinst{HYPERLINK "http://www.itu.int/ITU-T/formal-language/itu-t/x/x237bis/1998/Connectionless-ACSE-1.html"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+Module Connectionless-ACSE-1 (X.237 bis:09/1998)}}.\uc0\u8232 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+OIDs: The C12.22 Object identifiers that are encapsulated in the {\field{\*\fldinst{HYPERLINK "http://www.itu.int/ITU-T/formal-language/itu-t/x/x237bis/1998/Connectionless-ACSE-1.html"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+Module Connectionless-ACSE-1 (X.237 bis:09/1998)}} message are managed via approved object management authorities (Registries), such as {\field{\*\fldinst{HYPERLINK "https://www.ecmx.org/"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+The Energy Communications Management Exchange\'ae}}.\uc0\u8232 \
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf0 \expnd0\expndtw0\kerning0
+Wireshark\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf0 \expnd0\expndtw0\kerning0
+The C12.22 dissector has been included in the main code since version 1.8. The dissector implements all three C12.22 security modes (none, Authentication only and Ciphertext with Authentication) and TCP packet reassembly.\
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf0 \expnd0\expndtw0\kerning0
+Preference Settings\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf0 \expnd0\expndtw0\kerning0
+The following preference settings are associated with the C12.22 dissector:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Desegment all C12.22 messages spanning multiple TCP segments\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Verify crypto for all applicable C12.22 messages\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Decryption table\
+\pard\pardeftab720\sa280
+\cf0 \expnd0\expndtw0\kerning0
+The decryption table is a list of cryptographic keys used with a specific instance of the C12.22 protocol. The table search mechanism is very simple: the dissector searches linearly from the top of the table to the bottom until it finds a matching key ID. This means that the table may contain multiple entries for a particular key ID. That is, one might have multiple different keys all labelled as key 0 within the table but the dissector will only use the first one listed. This is done as a convenience so that different captures can be analyzed simply by moving the relevant key(s) up to the top of the list. As per the protocol specification the key ID is a single byte and the keys are each sixteen bytes long. Both are specified in hexadecimal notation in this dissector.\
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf0 \expnd0\expndtw0\kerning0
+Example capture file\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa70
+\ls3\ilvl0
+\b0\fs28 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/SampleCaptures?action=AttachFile&do=view&target=c1222overIPv4.cap.gz"}}{\fldrslt \expnd0\expndtw0\kerning0
+SampleCaptures/c1222overIPv4.cap.gz}}\cf0 \expnd0\expndtw0\kerning0
+ C12.22 read of Standard Table 1 with response. This communication was using 
+\i \expnd0\expndtw0\kerning0
+Ciphertext with Authentication
+\i0 \expnd0\expndtw0\kerning0
+ mode with key 0 = 6624C7E23034E4036FE5CB3A8B5DAB44\uc0\u8232 \
+\ls3\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/SampleCaptures?action=AttachFile&do=view&target=c1222_over_ipv6.pcap"}}{\fldrslt \expnd0\expndtw0\kerning0
+SampleCaptures/c1222_over_ipv6.pcap}}\cf0 \expnd0\expndtw0\kerning0
+ C12.22 read of Standard Tables 1 and 2 with response. This communication was using 
+\i \expnd0\expndtw0\kerning0
+Ciphertext with Authentication
+\i0 \expnd0\expndtw0\kerning0
+ mode with key 0 = 000102030405060708090A0B0C0D0E0F\uc0\u8232 \
+\pard\pardeftab720\sa280
+\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf0 \expnd0\expndtw0\kerning0
+Display Filter\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf0 \expnd0\expndtw0\kerning0
+A complete list of C12.22 display filter fields can be found in the {\field{\*\fldinst{HYPERLINK "http://www.wireshark.org/docs/dfref/c/c1222.html"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+display filter reference}}\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Show only the C12.22 based traffic:
+\f2 \cb4 \expnd0\expndtw0\kerning0
+ c1222\uc0\u8232 
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sa280
+\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf0 \expnd0\expndtw0\kerning0
+Capture Filter\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf0 \expnd0\expndtw0\kerning0
+You cannot directly filter C12.22 protocols while capturing. However, if you know the {\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/TCP"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+TCP}} port used (see above), you can filter on that one.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls5\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Capture only the C12.22 traffic over the default port (1153):
+\f2 \cb4 \expnd0\expndtw0\kerning0
+ tcp port c1222-acse\uc0\u8232 
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sa280
+\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf0 \expnd0\expndtw0\kerning0
+External links\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa70
+\ls6\ilvl0
+\b0\fs28 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://standards.ieee.org/findstds/standard/1703-2012.html"}}{\fldrslt \expnd0\expndtw0\kerning0
+IEEE STANDARD 1703-2012}}\cf0 \expnd0\expndtw0\kerning0
+- IEEE Standard for Local Area Network/Wide Area Network (LAN/WAN) Node Communication Protocol to Complement the Utility Industry End Device Data Tables.\uc0\u8232 \
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "http://www.nema.org/media/pr/20090324a.cfm"}}{\fldrslt \expnd0\expndtw0\kerning0
+NEMA press release}}\cf0 \expnd0\expndtw0\kerning0
+ 
+\i \expnd0\expndtw0\kerning0
+NEMA Publishes ANSI C12.22 Protocol Specification for Interfacing to Data Communication Networks
+\i0 \expnd0\expndtw0\kerning0
+ - describes what the protocol is and where to get a copy\uc0\u8232 \
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://standards.ieee.org/findstds/standard/1377-2012.html"}}{\fldrslt \expnd0\expndtw0\kerning0
+IEEE STANDARD 1377-2012}}\cf0 \expnd0\expndtw0\kerning0
+- IEEE Standard for Utility Industry Metering Communication Protocol Application Layer (End Device Data Tables).\uc0\u8232 \
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "http://www.electricenergyonline.com/?page=show_article&mag=18&article=138"}}{\fldrslt \expnd0\expndtw0\kerning0
+An Overview of ANSI C12.22}}\cf0 \expnd0\expndtw0\kerning0
+ trade magazine article gives an overview of the protocol.\uc0\u8232 \
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://ecmx.org/public/Resources/Documents/general/SmartGrid-TCP-vs-OSI-and-C1222-2012.pdf"}}{\fldrslt \expnd0\expndtw0\kerning0
+OSI Model vs. TCP/IP Model and use case of ANSI C12.22 / IEEE Std 1703\'99}}\cf0 \expnd0\expndtw0\kerning0
+ Compares and contrasts the two main reference models, the Open System Interconnection Model (OSI) and Transport Control Protocol /Internet Protocol (TCP/IP). Explains how ANSI C12.22 / IEEE Std 1703 fit on top of the OSI transport layer (4) or the TCP/IP transport layer in accordance with IETF RFC 6142.\uc0\u8232 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+\pard\pardeftab720
+
+\fs28 \cf0 \expnd0\expndtw0\kerning0
+GNU General Public License\
+This page is based on the WireShark project's wiki page at:\
+{\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/C12.22"}}{\fldrslt https://wiki.wireshark.org/C12.22}}}
