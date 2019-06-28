@@ -1,5 +1,5 @@
-# ct-user
-User settings, support, and examples for users of Control Things Platform
+# ct-samples
+Sample files for users of Control Things Platform
 
 ## Top Level Directory Discriptions
 - Crypto - Files for crypto exercises
