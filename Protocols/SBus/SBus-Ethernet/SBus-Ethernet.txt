@@ -1,0 +1,37 @@
+Ether-S-Bus (sbus)
+Ether-S-Bus is a protocol used for the communication with and between PCDs (Process Control Device) which are PLCs (Programmable Logic Controllers) manufactured by the company Saia-Burgess Controls Ltd. The protocol contains all necessary functions to completely configure, program a PCD and visualize its memory content and the states of the I/Os.
+
+History
+The first S-Bus (Saia Bus) was developed together with the first PCD type in 1990. At this time only the Serial-S-Bus on RS485 and RS232 was implemented. Due to the constant evaluation of the controllers additional communication interfaces such as USB, Ethernet (Ether-S-Bus) and FDL (Fieldbus Data Link, used with Profi-S-Bus) were added. Ether-S-Bus is the implementation of S-Bus on Ethernet. This step was done in order to increase the communication speed and also add multi master capability. Further on, other Ethernet based protocols such as HTTP, FTP and SMTP which were implemented to the new controllers can now run on the same physical port of the controller.
+
+Protocol dependencies
+Ether-S-Bus uses UDP as its transport protocol. The port used by Ether-S-Bus is 5050.
+
+Example traffic
+EtherSBusScreenShot.png
+
+Wireshark
+The sbus dissector for Ether-S-Bus is fully functional (also it doesn't dissect every special command in detail). The plugin for Ethereal 0.99.0 (for Windows) is available at http://www.sbc-support.ch/faq.
+
+Preference Settings
+There are no preference settings for the sbus dissector.
+
+Example capture file
+SampleCaptures/sbus.pcap
+
+Display Filter
+A complete list of PROTO display filter fields can be found in the display filter reference
+
+Show only the Ether-S-Bus based traffic:
+
+ sbus 
+Capture Filter
+You cannot directly filter Ether-S-Bus protocols while capturing. However, you can filter on UDP port 5050.
+
+Capture only the Ether-S-Bus traffic over the default port (5050):
+
+ udp port 5050 
+External links
+http://www.sbc-support.ch/ Support page of Saia-Burgess Controls Ltd. - This page contains the manuals for S-Bus and Ether-S-Bus. For the full protocol description please mail to pcdsupport[AT]saia-burgess.com.
+
+Discussion

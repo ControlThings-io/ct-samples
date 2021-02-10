@@ -1,6 +1,0 @@
-Plant1.pcap - https://www.cloudshark.org/captures/76038eaa4a3b
- - Has Modbus, Profinet, EtherNet/IP-CIP, and S7COMM
-
-
-sansholidayhack2013.pcap - https://pen-testing.sans.org/holiday-challenge/2013
- - For a full analysis of the Holiday Challenge, go to http://pen-testing.sans.org/blog/2014/01/20/holiday-challenge-2013-winners-and-answers
