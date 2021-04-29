@@ -1,0 +1,4 @@
+Source: Wireshark
+URL: https://gitlab.com/wireshark/wireshark/-/wikis/SampleCaptures#ethercat
+Description: Example traffic of Ethercat. Capture shows the boot up of an network with Beckhoff 1100, 1014, 2004, 3102 and 4132 modules.
+
