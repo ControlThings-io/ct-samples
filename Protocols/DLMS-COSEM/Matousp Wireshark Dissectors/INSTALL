@@ -1,0 +1,38 @@
+DLMS dissector for Wireshark
+(c) Petr Matousek, Brno University of Technology, Brno, Czech Republic
+Contact: matousp@fit.vutbr.cz
+
+ABOUT DISSECTOR
+---------------
+DLMS dissector for Wireshark requires the following files:
+ - dlms.lua - DLMS/COSEM dissector
+ - hdlc.lua - HDLC over TCP/IP dissector (optional)
+ - dlms-wrapper.lua - DLMS wrapper dissector (optional)
+
+Based on the kind of encapsulation either hdlc.lua or dlms-wrapper.lua is required. 
+For supported features, see Readme.txt
+
+INSTALLATION GUIDELINES
+-----------------------
+
+1) Check the LUA support of your Wireshark
+
+  (i) Launch Wireshark, open menu Help/About Wireshark
+  (ii) Check if the distribution is compiled with Lua interpretor
+
+2) Check for the Wireshark plugins folder name
+  (i) Luanch Wireshark, open menu Help/About Wireshark/Folders
+  (ii) Check for the Personal Plugins folder, e.g., $HOMEPATH$\AppData\Roaming\Wireshark\plugins
+
+3) Copy *.lua dissectors into the the Wireshark Personal Plugins Folder
+
+4) Launch Wireshark
+
+NOTES
+-----
+- DLMS parser is called by default on the communication that is transmitted over TCP ports 
+  specified in hdlc.lua or dlms-wrapper.lua. If your DLMS communication is transmitted over 
+  other ports, you can add your ports into the above mentioned files or you can right click 
+  on the packet in the Wireshark and choose Decode As option where you select either HDLC 
+  or DLMS-Wrapper based on your encapsulation.
+- LUA support in Wireshark is required. Some Unix versions of Wireshark do not support LUA. 
