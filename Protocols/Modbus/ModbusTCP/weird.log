@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	weird
+#open	2024-12-10-09-00-07
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer	source
+#types	time	string	addr	port	addr	port	string	string	bool	string	string
+1352718180.264400	-	141.81.0.10	0	141.81.0.86	0	bad_IP_checksum	-	F	zeek	IP
+#close	2024-12-10-09-00-07

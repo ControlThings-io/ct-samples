@@ -1,0 +1,23 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	conn
+#open	2024-12-10-09-00-07
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents
+#types	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count	set[string]
+1352718180.459273	CYLOak2tH3aSmTg1u2	141.81.0.10	59758	141.81.0.46	502	tcp	modbus	55.594350	0	12254	SHR	F	F	0	^adf	0	0	294	24014	-
+1352718236.275566	CasScOi1g8MGsANbe	141.81.0.10	59796	141.81.0.46	502	tcp	modbus	28.699610	0	3604	OTH	F	F	0	^had	0	0	147	9488	-
+1352718180.264365	C9w8Ms3WHSvpwv7vjg	141.81.0.10	57184	141.81.0.86	502	tcp	modbus	84.765177	0	30853	OTH	F	F	0	^ad	0	0	817	63533	-
+1352718180.638360	CRSvhr2iWMqrB3wfHe	141.81.0.10	59599	141.81.0.143	502	tcp	modbus	84.517364	0	26398	OTH	F	F	0	^ad	0	0	615	50998	-
+1352718180.347831	CT3SrM0sCxIaQVuwf	141.81.0.10	64341	141.81.0.144	502	tcp	modbus	84.874626	0	18548	OTH	F	F	0	^d	0	0	413	35068	-
+1352718180.348196	CproR53AuF857QHTbc	141.81.0.10	64342	141.81.0.164	502	tcp	modbus	84.874681	0	18571	OTH	F	F	0	^d	0	0	415	35171	-
+1352718180.347830	CLDtI61goUpAYW9kF7	141.81.0.10	53414	141.81.0.44	502	tcp	modbus	84.610933	0	19798	OTH	F	F	0	^dt	0	0	527	40900	-
+1352718180.347833	CZYCPf2WWw5PzD2g27	141.81.0.10	64340	141.81.0.104	502	tcp	modbus	84.874622	0	19793	OTH	F	F	0	^dt	0	0	540	41426	-
+1352718180.408992	Cr9Udd6kxg58NzNh3	141.81.0.10	51411	141.81.0.26	502	tcp	modbus	84.516254	0	16736	OTH	F	F	0	^ad	0	0	530	37936	-
+1352718180.466156	C52zRU22VQZO5A6XYc	141.81.0.10	54138	141.81.0.66	502	tcp	modbus	84.617088	0	30842	OTH	F	F	0	^ad	0	0	832	64122	-
+1352718180.337680	CkWLio4i4bJ8uNJMHb	141.81.0.10	64338	141.81.0.24	502	tcp	modbus	84.635983	0	23498	OTH	F	F	0	^dt	0	0	588	47029	-
+1352718180.524984	Ckcgqi17Rpt2DgnY8	141.81.0.10	64368	141.81.0.64	502	tcp	modbus	84.424807	0	24691	OTH	F	F	0	^d	0	0	553	46811	-
+1352718180.560930	CKfRvu2ZrCzcHHODkf	141.81.0.10	50594	141.81.0.84	502	tcp	modbus	84.425882	0	20152	OTH	F	F	0	^dta	0	0	576	43214	-
+1352718180.735992	Cn5HpR1xhfrDn8pUEe	141.81.0.10	59598	141.81.0.163	502	tcp	modbus	84.442588	0	26010	OTH	F	F	0	^ad	0	0	695	53810	-
+#close	2024-12-10-09-00-07
